@@ -71,7 +71,7 @@ The following enterprise physical security, cloud VMS, and AI camera intelligenc
 
 ## 💻 Open-Source Projects (Ranked by Stars)
 
-All open-source tools and frameworks are **sorted in strict descending order of GitHub Stars_Count**. Each project includes a live white social Stars_Badge linked directly to that repository's stargazers page:
+All open-source tools and frameworks are **sorted in strict descending order of GitHub_Stars_Count**. Each project includes a live white social Stars_Badge linked directly to that repository's stargazers page:
 
 ### 🏆 Tier 1: Ecosystem Foundations (>10,000 ⭐)
 

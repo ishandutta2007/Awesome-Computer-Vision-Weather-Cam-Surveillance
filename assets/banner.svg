@@ -112,7 +112,7 @@
   <circle cx="1040" cy="160" r="140" fill="url(#cyanGlow)" filter="url(#glow)" opacity="0.3" />
   <circle cx="150" cy="90" r="100" fill="#6366f1" filter="url(#glow)" opacity="0.15" />
 
-  <!-- 4. Dynamic Radar & Vision Analytics Element (Background/Right) -->
+  <!-- 4. Dynamic Radar and Vision Analytics Element (Background/Right) -->
   <g id="radarGroup">
     <circle cx="1040" cy="160" r="130" class="radar-ring" />
     <circle cx="1040" cy="160" r="90" class="radar-ring" />
@@ -142,7 +142,7 @@
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
     </circle>
     <text x="32" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">
-      CURATED ECOSYSTEM &bull; VMS &bull; NVR &bull; AI
+      CURATED ECOSYSTEM &#x2022; VMS &#x2022; NVR &#x2022; AI
     </text>
   </g>
 
@@ -163,35 +163,35 @@
   <g transform="translate(60, 275)" class="float-pill-1">
     <rect width="168" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
     <circle cx="22" cy="21" r="7" fill="#38bdf8" />
-    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">🌦 Weather &amp; All-Sky</text>
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">&#x1F326;&#xFE0F; Weather &amp; All-Sky</text>
   </g>
 
   <g transform="translate(244, 275)" class="float-pill-2">
     <rect width="186" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
     <circle cx="22" cy="21" r="7" fill="#818cf8" />
-    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">👁 Local AI Object Vision</text>
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">&#x1F441;&#xFE0F; Local AI Object Vision</text>
   </g>
 
   <g transform="translate(446, 275)" class="float-pill-3">
     <rect width="186" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
     <circle cx="22" cy="21" r="7" fill="#c084fc" />
-    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">⚡ RTSP / WebRTC Media</text>
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">&#x26A1; RTSP / WebRTC Media</text>
   </g>
 
   <g transform="translate(648, 275)" class="float-pill-1">
     <rect width="168" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
     <circle cx="22" cy="21" r="7" fill="#34d399" />
-    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">🔒 Self-Hosted NVR</text>
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">&#x1F512; Self-Hosted NVR</text>
   </g>
 
   <!-- Bottom Accent Status Bar -->
   <g transform="translate(60, 360)">
     <rect width="1080" height="2" fill="url(#primaryGrad)" opacity="0.6" />
     <text x="0" y="24" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">
-      ENTERPRISE SAAS VSaaS &bull; HOMELAB NVR &bull; OPEN-SOURCE ALLSKY ARCHITECTURES &bull; EDGE INFERENCE
+      ENTERPRISE SAAS VSaaS &#x2022; HOMELAB NVR &#x2022; OPEN-SOURCE ALLSKY ARCHITECTURES &#x2022; EDGE INFERENCE
     </text>
     <text x="1080" y="24" text-anchor="end" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">
-      CURATED WITH ❤️ BY ISHAN DUTTA
+      CURATED WITH &#x2764;&#xFE0F; BY ISHAN DUTTA
     </text>
   </g>
 </svg>

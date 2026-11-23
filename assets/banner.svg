@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a11" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Radar Sweep Gradient -->
+    <linearGradient id="radarSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .bg-grid { stroke: rgba(56, 189, 248, 0.05); stroke-width: 1; }
+      .radar-ring { stroke: rgba(56, 189, 248, 0.15); stroke-width: 1.5; fill: none; }
+      .radar-sweep { transform-origin: 1040px 160px; animation: sweep 8s linear infinite; }
+      .pulse-orb { transform-origin: 1040px 160px; animation: pulse 3s ease-in-out infinite alternate; }
+      .float-pill-1 { animation: float1 4s ease-in-out infinite alternate; }
+      .float-pill-2 { animation: float2 5s ease-in-out infinite alternate; }
+      .float-pill-3 { animation: float3 4.5s ease-in-out infinite alternate; }
+      .scanline { animation: scan 6s ease-in-out infinite; }
+      .detection-box { stroke: #38bdf8; stroke-width: 1.5; stroke-dasharray: 4, 3; fill: rgba(56, 189, 248, 0.05); }
+
+      @keyframes sweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0% { opacity: 0.3; transform: scale(0.95); }
+        100% { opacity: 0.7; transform: scale(1.05); }
+      }
+      @keyframes float1 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+      @keyframes float2 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(6px); }
+      }
+      @keyframes float3 {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-6px); }
+      }
+      @keyframes scan {
+        0%, 100% { transform: translateY(0px); opacity: 0.1; }
+        50% { transform: translateY(220px); opacity: 0.35; }
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- 2. Decorative Background Grid Pattern -->
+  <g class="bg-grid">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+
+    <line x1="120" y1="0" x2="120" y2="420" />
+    <line x1="240" y1="0" x2="240" y2="420" />
+    <line x1="360" y1="0" x2="360" y2="420" />
+    <line x1="480" y1="0" x2="480" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="720" y1="0" x2="720" y2="420" />
+    <line x1="840" y1="0" x2="840" y2="420" />
+    <line x1="960" y1="0" x2="960" y2="420" />
+    <line x1="1080" y1="0" x2="1080" y2="420" />
+  </g>
+
+  <!-- 3. Ambient Glowing Background Orbs -->
+  <circle cx="1040" cy="160" r="140" fill="url(#cyanGlow)" filter="url(#glow)" opacity="0.3" />
+  <circle cx="150" cy="90" r="100" fill="#6366f1" filter="url(#glow)" opacity="0.15" />
+
+  <!-- 4. Dynamic Radar & Vision Analytics Element (Background/Right) -->
+  <g id="radarGroup">
+    <circle cx="1040" cy="160" r="130" class="radar-ring" />
+    <circle cx="1040" cy="160" r="90" class="radar-ring" />
+    <circle cx="1040" cy="160" r="50" class="radar-ring" />
+    <circle cx="1040" cy="160" r="15" fill="#38bdf8" filter="url(#softGlow)" />
+    
+    <!-- Radar crosshairs -->
+    <line x1="910" y1="160" x2="1170" y2="160" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+    <line x1="1040" y1="30" x2="1040" y2="290" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+
+    <!-- Animated Radar Sweep -->
+    <path class="radar-sweep" d="M 1040 160 L 1170 160 A 130 130 0 0 0 1132 68 Z" fill="url(#radarSweep)" />
+
+    <!-- Computer Vision AI Target Box (Simulated Camera Object Tracking) -->
+    <rect x="990" y="80" width="55" height="50" rx="4" class="detection-box" />
+    <text x="993" y="74" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600">CLOUD 94%</text>
+
+    <rect x="1065" y="185" width="60" height="40" rx="4" class="detection-box" stroke="#a855f7" />
+    <text x="1068" y="179" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600">MOTION 98%</text>
+  </g>
+
+  <!-- 5. Foreground Content (Guaranteed Crisp & High-Contrast Foreground) -->
+  <!-- Top Category Chip / Pill -->
+  <g transform="translate(60, 48)">
+    <rect width="320" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="18" cy="16" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">
+      CURATED ECOSYSTEM &bull; VMS &bull; NVR &bull; AI
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="132" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.8">
+    Awesome Computer Vision
+  </text>
+  <text x="60" y="184" fill="url(#primaryGrad)" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.8">
+    &amp; Weather Cam Surveillance
+  </text>
+
+  <!-- Subtitle / Tagline -->
+  <text x="60" y="232" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400">
+    The definitive directory of AI video surveillance, outdoor all-sky cams, self-hosted NVRs &amp; RTSP/WebRTC gateways.
+  </text>
+
+  <!-- 6. Floating Feature Badges (Interactive/Dynamic) -->
+  <g transform="translate(60, 275)" class="float-pill-1">
+    <rect width="168" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="22" cy="21" r="7" fill="#38bdf8" />
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">🌦 Weather &amp; All-Sky</text>
+  </g>
+
+  <g transform="translate(244, 275)" class="float-pill-2">
+    <rect width="186" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="22" cy="21" r="7" fill="#818cf8" />
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">👁 Local AI Object Vision</text>
+  </g>
+
+  <g transform="translate(446, 275)" class="float-pill-3">
+    <rect width="186" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="22" cy="21" r="7" fill="#c084fc" />
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">⚡ RTSP / WebRTC Media</text>
+  </g>
+
+  <g transform="translate(648, 275)" class="float-pill-1">
+    <rect width="168" height="42" rx="10" fill="url(#pillGrad)" stroke="#334155" stroke-width="1" />
+    <circle cx="22" cy="21" r="7" fill="#34d399" />
+    <text x="38" y="26" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">🔒 Self-Hosted NVR</text>
+  </g>
+
+  <!-- Bottom Accent Status Bar -->
+  <g transform="translate(60, 360)">
+    <rect width="1080" height="2" fill="url(#primaryGrad)" opacity="0.6" />
+    <text x="0" y="24" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">
+      ENTERPRISE SAAS VSaaS &bull; HOMELAB NVR &bull; OPEN-SOURCE ALLSKY ARCHITECTURES &bull; EDGE INFERENCE
+    </text>
+    <text x="1080" y="24" text-anchor="end" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">
+      CURATED WITH ❤️ BY ISHAN DUTTA
+    </text>
+  </g>
+</svg>

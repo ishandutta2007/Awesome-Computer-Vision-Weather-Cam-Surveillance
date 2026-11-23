@@ -30,73 +30,34 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saashosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Support & Share](#support--share)
-
 - [Disclaimer](#disclaimer)
+
+
+
+## Sector Overview & Market Dynamics
+
+The global video surveillance and computer vision market is estimated at approximately $63B–$84B in 2025 and projected to reach $68B–$95B in 2026 (with the core professional VMS and hardware segment representing $24B–$30B). The sector is moderately concentrated at the top among leading hardware and enterprise VMS vendors (with top players capturing ~30%–43% of total revenue), yet structurally supported by a fragmented ecosystem of regional integrators and specialized cloud-native/AI video analytics platforms rather than a single winner-take-all monopoly.
 
 
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Verkada & Verkada Command](https://verkada.com)**  
-
-  Cloud-managed enterprise physical security and video surveillance platform featuring hybrid edge-to-cloud cameras, environmental air-quality sensors, and browser-based Command analytics.
-
-
-
-- **[Rhombus Systems](https://rhombus.com)**  
-
-  Cloud-managed enterprise video security and IoT sensor platform offering AI-powered object/weather anomaly detection, open APIs, and zero-NVR edge storage.
-
-
-
-- **[Spot AI](https://spotai.co)**  
-
-  Cloud AI camera system and Intelligent Video Recorder (IVR) platform turning existing IP/RTSP cameras into searchable, AI-monitored video intelligence dashboards.
-
-
-
-- **[Ambient.ai](https://ambient.ai)**  
-
-  Computer vision intelligence platform applying multimodal AI models to existing enterprise camera feeds for real-time physical security threat and environmental hazard detection.
-
-
-
-- **[Coram AI](https://coram.ai)**  
-
-  Cloud-managed AI video security platform transforming standard IP cameras into natural-language-searchable surveillance and automated alerting systems.
-
-
-
-- **[Camio](https://camio.com)**  
-
-  Cloud AI video search and real-time computer vision alerting platform indexing existing RTSP/ONVIF camera streams for instant event retrieval.
-
-
-
-- **[Eagle Eye Networks](https://eagleeyenetworks.com)**  
-
-  True cloud Video Management System (VMS) offering global camera centralization, AI video analytics, triple-redundant cloud storage, and REST APIs.
-
-
-
-- **[Hanwha Vision Wisenet WAVE](https://hanwhavisionamerica.com)**  
-
-  Cross-platform IP Video Management System (VMS) with cloud sync (`WAVE Sync`), low-latency adaptive streaming, and AI edge camera metadata integration.
-
-
-
-- **[March Networks (Searchlight Cloud)](https://marchnetworks.com)**  
-
-  Enterprise video surveillance and business intelligence platform combining hybrid NVRs, cloud health monitoring, and AI-assisted visual analytics.
+| Platform | Description | Scale (Revenue / Valuation) | Pricing (Specific Starting Tiers) | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Verkada & Verkada Command](https://verkada.com)** | Cloud-managed enterprise physical security and video surveillance platform featuring hybrid edge-to-cloud cameras, environmental air-quality sensors, and Command analytics. | **$5.8B** valuation ($1B+ annualized bookings) | Starts at **$249/camera/year** (1-year standard camera cloud license `LIC-CAM`; discounts to ~$18.30/camera/month on multi-year commitments); hardware sold separately (from $599/camera). | **30-day free trial**; includes free evaluation hardware (camera/sensor), full Command cloud access, 2-way shipping, and technical support. |
+| **[Hanwha Vision Wisenet WAVE](https://hanwhavisionamerica.com)** | Cross-platform IP Video Management System (VMS) with cloud sync (`WAVE Sync`), low-latency adaptive streaming, and AI edge camera metadata integration. | **~$1.35B–$1.4B** revenue / **~$1.2B–$1.65B** market cap (KRX: 489790) | Starts at **$100–$150 one-time perpetual license** per camera channel (`WAVE-PRO-01`); includes lifetime software upgrades with no recurring annual subscription fees. | **30-day free trial**; includes recording and full management licenses for up to **4 channels/devices** upon server installation (live viewing is always free). |
+| **[Eagle Eye Networks](https://eagleeyenetworks.com)** | True cloud Video Management System (VMS) offering global camera centralization, AI video analytics, triple-redundant cloud storage, and REST APIs. | **~$116M–$178M** estimated ARR / **$175M–$257M** total funding | Starts at **$5.00/camera/month** (basic tier, 720p/1080p resolution, short cloud retention or local-recording bridge tier); scales up to $30–$79/camera/month for 4K forensic retention. | **30-day proof-of-concept / evaluation**; partner-assisted pilot with live cloud VMS access for up to 4–8 camera channels. No permanent free tier. |
+| **[Ambient.ai](https://ambient.ai)** | Computer vision intelligence platform applying multimodal AI models to existing enterprise camera feeds for real-time physical security threat and environmental hazard detection. | **~$250M–$500M** estimated valuation ($140M–$146M funding) | Custom enterprise starting at **~$1,200/camera/year** equivalent (~$100/camera/month software license for threat signatures) plus on-site edge compute appliance (Ambient Pulsar). | **30-day proof-of-concept (PoC)**; sales-managed enterprise pilot on a dedicated sample of 5–20 camera feeds with custom threat signatures. No permanent free tier. |
+| **[Rhombus Systems](https://rhombus.com)** | Cloud-managed enterprise video security and IoT sensor platform offering AI-powered object/weather anomaly detection, open APIs, and zero-NVR edge storage. | **~$370M–$380M** valuation (~$38M–$44M estimated ARR) | Starts at **$149/camera/year** (Professional Tier license, ~$12.42/camera/month); hardware sold separately (from $399/camera); 60-day hardware return guarantee. | **30-day free trial**; evaluation hardware unit shipped with cloud software access and technical support via authorized integrators. No permanent free tier. |
+| **[March Networks (Searchlight Cloud)](https://marchnetworks.com)** | Enterprise video surveillance and business intelligence platform combining hybrid NVRs, cloud health monitoring, and AI-assisted visual analytics. | **$114M** acquisition valuation (subsidiary of Delta Electronics) | Starts at **$149/camera/year MSRP** for CloudSight camera connection; Searchlight Cloud POS/BI analytics add-on starts at **$840/location/year** (up to 5 POS terminals). | **30-day proof-of-concept / evaluation**; sales-assisted pilot for up to 4 camera streams on CloudSight/Command Enterprise. No permanent free tier. |
+| **[Spot AI](https://spotai.co)** | Cloud AI camera system and Intelligent Video Recorder (IVR) platform turning existing IP/RTSP cameras into searchable, AI-monitored video intelligence dashboards. | **~$93M+** venture funding (~$47.5M estimated ARR) | Starts at **$100/camera/year** (~$8.33–$99/camera/month depending on commitment and cloud tiers; minimum enterprise packages start around $1,500/year) plus on-prem IVR appliance ($2,000–$5,000). | **14-to-30 day proof-of-concept (PoC)**; guided pilot using customer's existing RTSP feeds with an evaluation IVR appliance. No permanent free tier. |
+| **[Coram AI](https://coram.ai)** | Cloud-managed AI video security platform transforming standard IP cameras into natural-language-searchable surveillance and automated alerting systems. | **~$66M** total funding (Series B backed by Battery Ventures & Ansa) | Starts at **$270/camera/year** (baseline software license connecting existing ONVIF camera; advanced safety analytics tier at ~$419/camera/year); works with Coram Point AI appliance. | **14-to-30 day proof-of-concept (PoC)**; technical pilot on existing customer cameras with live AI search demo (no credit card required). No permanent free tier. |
+| **[Camio](https://camio.com)** | Cloud AI video search and real-time computer vision alerting platform indexing existing RTSP/ONVIF camera streams for instant event retrieval. | **~$2M–$3.5M** estimated ARR ($1.6M early seed funding) | Starts at **$4.99/camera/month** (basic usage-based AI search plan; Camio Box software gateway is free download; Camio Flex add-ons run $1–$89/stream/month). | **7-day free trial**; full access to AI natural-language video search, real-time alerts, and Camio Box software gateway. Expired/unpaid accounts restricted to basic live viewing. |
 
 
 
